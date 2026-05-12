@@ -1,6 +1,6 @@
 
 - name: Install and start nginx
-  hosts: frontend
+  hosts: localhost
   become: yes
 
   tasks:
