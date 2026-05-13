@@ -1,0 +1,11 @@
+- name : variable as promt
+  hosts : localhost
+  vars_promt:
+   - name : username
+     promt : "what is your name"
+     private : no
+  tasks:
+   - name : student name
+     ansible.builtin.debug:
+       msg: "my name is: {{username}}"
+     
