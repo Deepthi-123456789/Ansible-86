@@ -2,7 +2,7 @@
   hosts : localhost
   connection : local
   vars:
-   - name : Deepthi via play
+   - name : Gopi via play
   vars_prompt:
    - name : name
      prompt : "what is your name:"
@@ -12,7 +12,7 @@
   tasks:
    - name : student info
      vars:
-     - name : Deepthi via task
+     - name : Gopi via task
      ansible.builtin.debug:
       msg: " my name is: {{name}}"
 
