@@ -1,0 +1,6 @@
+- name : variables via cmd
+  hosts : localhost
+  tasks:
+   - name : student info
+     ansible.builtin.debug:
+       msg: "my name is: {{name}} age is: {{age}} and course: {{course}}" 
