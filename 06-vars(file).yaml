@@ -1,8 +1,8 @@
-- name : variable from files
-  hosts : localhost
-  vars_file:
-  - student.yaml
-  tasks:
-   - name : student info
-     ansible.builtin.debug:
-       msg: "my name is: {{name}} age is: {{age}} and course: {{course}}"
+-  name : variable from files
+   hosts : localhost
+   vars_file:
+   - student.yaml
+   tasks:
+    - name : student info
+      ansible.builtin.debug:
+        msg: "my name is: {{name}} age is: {{age}} and course: {{course}}"
