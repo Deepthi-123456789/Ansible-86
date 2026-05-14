@@ -1,6 +1,6 @@
 - name : variable as promt
   hosts : localhost
-  vars_promt:
+  vars_prompt:
    - name : username
      promt : "what is your name"
      private : no
