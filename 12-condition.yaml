@@ -1,0 +1,20 @@
+- name: conditions
+  hosts: localhost
+  vars:
+    number: 5
+
+  tasks:
+    - name: check number is even
+      ansible.builtin.debug:
+        msg: "number{{number}} is even"
+      when: number % 2 == 0
+
+    - name: check number is odd
+      ansible.builtin.debug:
+        msg: "number {{number}} is odd"
+      when: number % 2 != 0
+
+    - name: check number is less than 10 or not
+      ansible.builtin.debug:
+        msg: "number {{number}} is less than 10"
+      when: number < 10
