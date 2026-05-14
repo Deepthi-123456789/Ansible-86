@@ -1,6 +1,6 @@
 - name: variable via inventory file
   hosts: local
-  #connection: local
+  connection: local
   tasks:
     - name: student info
       ansible.builtin.debug:
