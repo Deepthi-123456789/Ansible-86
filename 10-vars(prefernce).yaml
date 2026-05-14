@@ -1,5 +1,5 @@
 - name: variable prefrences
-  hosts : local
+  hosts : localhost
   connection : local
   vars:
    - name : Deepthi via play
