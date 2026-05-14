@@ -16,4 +16,7 @@
    - name : student info
      ansible.builtin.debug:
       msg: "Name: {{ name }}, Age: {{ age }}, Private: {{ private }}, Courses: {{ courses }}, Topic wise: {{ topic_wise }}"
+
+#list=[]
+#map={}
     
