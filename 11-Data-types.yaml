@@ -1,0 +1,19 @@
+- name : Data types
+  hosts : localhost 
+  vars:
+   name : "Deepthi"  #string
+   age : 23  #numeric
+   private : true #boolean
+   courses : # ["python","linux","devops"] #list or
+    -python
+    -linux
+    -devops
+   topic_wise: #dictory or map
+    python : 2 chapters
+    linux : 3 chapters
+    devops : 4 chapters
+  tasks:
+   - name : student info
+     ansible.builtin.debug:
+      msg: "Name: {{ name }}, Age: {{ age }}, Private: {{ private }}, Courses: {{ courses }}, Topic wise: {{ topic_wise }}"
+    

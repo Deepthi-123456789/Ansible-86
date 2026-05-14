@@ -16,4 +16,11 @@
      ansible.builtin.debug:
       msg: " my name is: {{name}}"
 
+      # cmd
+      # task
+      # file
+      # prompt
+      # play
+      # inventory
+
 
