@@ -1,5 +1,5 @@
 - name : task level variables
-  hosts : localhosts
+  hosts : localhost
   vars:
     name : Deepthi
     age : 23
