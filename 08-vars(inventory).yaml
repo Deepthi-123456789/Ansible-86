@@ -1,5 +1,5 @@
 - name: variable via inventory file
-  hosts: localhost
+  hosts: local
   #connection: local
   tasks:
     - name: student info
