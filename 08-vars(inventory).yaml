@@ -1,6 +1,6 @@
-- name : variable via inventory file
-  hosts : localhost
+- name: variable via inventory file
+  hosts: local
   tasks:
-    - name : student info
+    - name: student info
       ansible.builtin.debug:
-       msg: "my  name is: {{name}} age is: {{age}} and course is: {{course}}"
+        msg: "my name is: {{ name }} age is: {{ age }} and course is: {{ course }}"
