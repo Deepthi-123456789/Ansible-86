@@ -1,0 +1,16 @@
+- name : functions
+  hosts : localhost
+  vars:
+   course : Aws with Devops engineer
+   topics : 
+    - shell
+    - ansible
+    - linux
+  tasks:
+   - name : string to list
+     ansible.builtin.debug:
+      msg : "{{course | split(',')}}" #split is a function which is used to split the string and it will return list and we are using index 0 to get the first word of the string
+
+   - name : list to dictonary or map
+     ansible.builtin.debug:
+      msg : "{{topics | item2dict}}"
