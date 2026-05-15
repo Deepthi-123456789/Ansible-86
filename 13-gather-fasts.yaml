@@ -1,6 +1,6 @@
 - name : Gathering facts
   hosts : localhost
-  taasks:
+  tasks:
    - name : facts
      ansible.builtin.debug:
       msg: "{{ansible_facts}}"  #server colectects all the information of server and store in ansible_facts 
