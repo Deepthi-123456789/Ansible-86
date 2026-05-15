@@ -1,11 +1,12 @@
-- name : loops concept
-  hosts : localhost
+- name: loops
+  hosts: local
+  connection: local
   tasks:
-   - name : looping names
-     ansible.builtin.debug:
-       msg : "{{item}}"
-     loop :
-      -ravi
-      -suresh
-      -kumar
-      -raju
+  - name: print names
+    ansible.builtin.debug:
+      msg: "Hello {{ item }}" # item is reserved
+    loop:
+    - Ramesh
+    - Suresh
+    - Raheem
+    - John
