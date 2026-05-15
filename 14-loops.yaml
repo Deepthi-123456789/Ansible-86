@@ -1,0 +1,11 @@
+- name : loops concept
+  hosts : localhost
+  tasks:
+   - name : looping names
+     ansible.builtin.debug:
+     msg : "{{item}}"
+     loop :
+      -ravi
+      -suresh
+      -kumar
+      -raju
