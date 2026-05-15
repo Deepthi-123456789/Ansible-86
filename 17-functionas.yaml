@@ -13,4 +13,4 @@
 
    - name : list to dictonary or map
      ansible.builtin.debug:
-      msg : "{{topics | item2dict}}"
+      msg : "{{topics | items2dict}}"
