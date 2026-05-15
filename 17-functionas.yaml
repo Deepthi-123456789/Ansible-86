@@ -2,10 +2,11 @@
   hosts : localhost
   vars:
    course :  Devops engineer,Aws
-   topics : 
-    - shell
-    - ansible
-    - linux
+   topics:
+    - key: shell
+      value: easy
+    - key: ansible
+      value: automation
   tasks:
    - name : string to list
      ansible.builtin.debug:
