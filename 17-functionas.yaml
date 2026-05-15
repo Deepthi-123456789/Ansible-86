@@ -18,3 +18,7 @@
    - name : list to dictonary or map
      ansible.builtin.debug:
       msg : "{{topics | items2dict}}" #items2dict is a function which is used to convert list to dictonary or map and it will return dictonary or map and we are using index 0 to get the first word of the string
+
+   - name :  dictonary or map to list
+     ansible.builtin.debug:
+      msg : "{{tools | dict2items}}" 
