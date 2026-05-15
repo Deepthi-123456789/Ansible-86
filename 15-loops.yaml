@@ -1,6 +1,6 @@
 - name : installing packages using loops
   hosts  : localhost
-  taskk:
+  tasks:
    - name : installing packages
      ansible.builtin.package:
       name : {{item}}
