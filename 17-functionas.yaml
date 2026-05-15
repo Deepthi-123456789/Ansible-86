@@ -7,6 +7,9 @@
       value: easy
     - key: ansible
       value: automation
+   tools:
+      shell : easy
+      ansible : automation
   tasks:
    - name : string to list
      ansible.builtin.debug:
